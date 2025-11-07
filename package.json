@@ -1,6 +1,6 @@
 {
   "name": "@sparkstone/feature-flags",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "source": "src/main.ts",
@@ -8,26 +8,25 @@
   "main": "./dist/main.cjs",
   "module": "./dist/main.module.js",
   "unpkg": "./dist/main.umd.js",
+  "files": ["dist"],
   "exports": {
     ".": {
       "require": "./dist/main.cjs",
       "default": "./dist/main.modern.js",
-      "types": "./dist/main.d.ts"
+      "types"  : "./dist/main.d.ts"
     }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sparkstonepdx/feature-flags.git"
+    "url" : "https://github.com/Sparkstonepdx/feature-flags.git"
   },
   "scripts": {
     "build": "microbundle src/*.ts --generateTypes",
-    "dev": "microbundle watch src/*.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev"  : "microbundle watch src/*.ts",
+    "test" : "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "microbundle": "^0.15.1"
-  }
+  "devDependencies": {"microbundle": "^0.15.1"}
 }
